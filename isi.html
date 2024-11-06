@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const rootElement = document.querySelector(":root");
+    // const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    // const audioIcon = document.querySelector('.audio-icon-wrapper i')
+    // const songs = document.querySelector('#songs');
+    // let isPlaying = false;
+
+
+    function disableScroll(){
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function(){
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll(){
+      window.onscroll = function(){}
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('opened', 'true');
+      // playAudio();
+      
+    }
+
+    function playAudio(){
+      const songs = document.querySelector('#songs');
+      song.volume = 0.05;
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function(){
+      if(isPlaying){
+        song.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      }else {
+        song.pause();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+
+      isPlaying = !isPlaying;
+    }
+
+    if (!localStorage.getItem('opened')){
+      disableScroll();
+    }
+    </script>
+
+    <script>
+        function disableScroll(){
+            screenTop = window.pageYOffset || document.documentElement.scrollTop;
+            screenLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function (){
+                window.scrollTo(scrollTop, scrollLeft);
+            }
+        }
+
+        disableScroll();
+    </script>
+
+    <script>
+        const rootElemen = doocument.querySelector(":root");
+
+function disableScrooll(){
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  ScrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+  window.onscroll = function(){
+    window.scrollTo(scrollTop, scrollLeft);
+  }
+
+  rootElemen.style.scrollBehavior = 'auto';
+}
+
+function enableScroll(){
+  window.onscroll = function (){ }
+  rootElemen.style.scrollBehavior = 'smooth';
+  // localStorage.setItem('opened', 'true');
+}
+
+// if (!localStorage.getItem('opened')){
+//   disableScrooll();
+// }
+
+disableScrooll();
+    </script>
+</body>
+</html> -->
